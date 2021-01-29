@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jinja Test Page</title>
+</head>
+<body>
+
+    <form action="/login" method="POST" class="text-center border border-light p-5">
+        <p class="h4 mb-4"><strong>Sign In</strong></p>
+
+        <!-- Email -->
+        <input type="email" id="defaultLoginFormEmail" name="email" class="form-control mb-4" placeholder="E-mail" value="{{email}}" required>
+
+        <!-- Password -->
+        <input type="password" id="defaultLoginFormPassword" name="passwd" class="form-control mb-4" placeholder="Password" required>
+
+        <div class="d-flex justify-content-around">
+            <div>
+                <!-- Remember me -->
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                    <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                </div>
+            </div>
+            <div>
+                <!-- Forgot password -->
+                <a href="">Forgot password?</a>
+            </div>
+        </div>
+
+        <!-- Sign in button -->
+        <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+
+        <!-- Register -->
+        <p>Not a member?
+            <a href="/regist">Register</a>
+        </p>
+    </form>
+
+
+</body>
+</html>
